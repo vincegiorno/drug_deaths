@@ -1,4 +1,4 @@
-# drug_deaths
+# Opioid drug deaths in the US by county
 
 This is an attempt to try to predict opioid overdose death rates based on census data. The Jupyter notebook on the "master" branch details a first attempt in which selected county-level data from the 2010 census and 2014 American Communities Survey are used to try to predict the death rate per 100,000 people in each county, categorized into 16 levels basically spanning the range 0-32 in steps of 2, with the final category being 31 and over. At the 16-class level, the results were extremely poor, so the categories were collapsed, first to 8, then 4 and, finally, 2. The results for binary classification were not particularly good, with the optimized model attaining a Matthews correlation coefficient of about .46 and an ROC-AUC score of .73, even with an adjustment in the high/low threshold to produce almost balanced classes.
 
